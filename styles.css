@@ -1,0 +1,39 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+h1, h2, h3, h4, h5, p, a{
+    margin:0px
+}
+
+#panels{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    gap: 5px
+}
+
+#panels div{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#panels img{
+    width: 100%;
+}
+
+#flowerGif {
+    grid-row-start: 3;
+}
+
+#introduction {
+    grid-row-start: 1;
+    grid-row-end: span 2;
+}
+
+@media (min-width: 600px) {
+    #panels{grid-template-columns: repeat(2, 1fr); 
+            width: 50%;}
+    
+}
