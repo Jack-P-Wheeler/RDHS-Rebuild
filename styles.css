@@ -20,6 +20,35 @@ h1, h2, h3, h4, h5, p, a{
     margin-bottom: 40px;
     box-shadow: 1px 1px 30px 1px rgb(125, 125, 125);
 }
+
+#rdhsLogo{
+    height: 50px;
+}
+
+.navButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    margin: 20px;
+}
+
+#navbar #home{
+    background-color: rgb(242,90,40);
+}
+
+#navbar #aboutUs{
+    background-color: rgb(248,147,43);
+}
+
+#navbar #meetings{
+    background-color: rgb(252,176,70);
+}
+
+#navbar #resources{
+    background-color: rgb(253, 237, 64);
+}
 /*Below is the styles for the grid on the home page */
 #pageContent{
     display: flex;
@@ -70,6 +99,9 @@ h1, h2, h3, h4, h5, p, a{
 /* */
 
 @media (max-width: 1200px) {
+    .navButton{
+        margin: 0px;
+    }
     #panels{
         grid-template: 1fr 1fr 1fr / 1fr 2fr;
         width: 100%;
@@ -80,6 +112,9 @@ h1, h2, h3, h4, h5, p, a{
 }
 
 @media (max-width: 600px) {
+    .navButton{
+        margin: 0px;
+    }
     #panels{
         grid-template-columns: 1fr;
         width: 100%;
