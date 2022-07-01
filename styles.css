@@ -156,3 +156,20 @@ h1, h2, h3, h4, h5, p, a{
         grid-template-columns: 1fr;
     }
 }
+
+.footer{
+    display: flex;
+    padding:15px;
+    justify-content: center;
+    background-image: linear-gradient(to right, #f8ac90 , #fced23);  
+}
+.footerNav1{
+    margin-right: 10px;
+}
+.footerNav2{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#rdhsFullLogo{
+    height: 80px;
+}
